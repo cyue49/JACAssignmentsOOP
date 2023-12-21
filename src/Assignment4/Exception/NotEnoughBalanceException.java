@@ -1,6 +1,6 @@
 package Assignment4.Exception;
 
-public class NotEnoughBalanceException extends Exception {
+public class NotEnoughBalanceException extends BankAccountException {
     public NotEnoughBalanceException() {
         super("There isn't enough balance.");
     }

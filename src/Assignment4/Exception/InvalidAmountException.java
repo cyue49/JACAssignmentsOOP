@@ -1,6 +1,6 @@
 package Assignment4.Exception;
 
-public class InvalidAmountException extends Exception{
+public class InvalidAmountException extends BankAccountException{
     public InvalidAmountException() {
         super("The amount is invalid.");
     }

@@ -1,6 +1,6 @@
 package Assignment4.Exception;
 
-public class WithdrawLimitException extends Exception {
+public class WithdrawLimitException extends BankAccountException {
     public WithdrawLimitException() {
         super("The withdraw limit has been reached.");
     }
