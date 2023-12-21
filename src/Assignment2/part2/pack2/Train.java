@@ -73,7 +73,6 @@ public class Train extends WheeledTransportation {
     }
 
     // toString
-
     @Override
     public String toString() {
         return "The Train #" + serialNum + " has: \n" +
@@ -85,7 +84,6 @@ public class Train extends WheeledTransportation {
     }
 
     // equals
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
