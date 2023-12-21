@@ -65,8 +65,24 @@ public class Main {
     // takes as input an array of Object and return a copy of it
     public static Object[] copyTheObject(Object[] objArr){
         Object[] arr = new Object[objArr.length]; // create new array of same length
-        for (int i=0; i<objArr.length; i++){
-            arr[i] = objArr[i];
+        for (int i=0; i<objArr.length; i++){ // check for class of each object and copy using copy constructor
+            if (objArr[i].getClass() == WheeledTransportation.class){
+                arr[i] = new WheeledTransportation((WheeledTransportation) objArr[i]);
+            }else if (objArr[i].getClass() == Train.class){
+                arr[i] = new Train((Train) objArr[i]);
+            }else if (objArr[i].getClass() == Metro.class){
+                arr[i] = new Metro((Metro) objArr[i]);
+            }else if (objArr[i].getClass() == Tram.class){
+                arr[i] = new Tram((Tram) objArr[i]);
+            }else if (objArr[i].getClass() == Monowheel.class){
+                arr[i] = new Monowheel((Monowheel) objArr[i]);
+            }else if (objArr[i].getClass() == Aircraft.class){
+                arr[i] = new Aircraft((Aircraft) objArr[i]);
+            }else if (objArr[i].getClass() == WorldWarIIAirplane.class){
+                arr[i] = new WorldWarIIAirplane((WorldWarIIAirplane) objArr[i]);
+            }else if (objArr[i].getClass() == Ferry.class){
+                arr[i] = new Ferry((Ferry) objArr[i]);
+            }
         }
         return arr;
     }

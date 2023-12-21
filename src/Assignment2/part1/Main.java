@@ -9,8 +9,6 @@ import Assignment2.part1.pack5.Aircraft;
 import Assignment2.part1.pack5.WorldWarIIAirplane;
 import Assignment2.part1.pack6.Ferry;
 
-import java.lang.reflect.Member;
-
 public class Main {
     public static void main(String[] args) {
         // testing out default constructors
