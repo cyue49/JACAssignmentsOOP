@@ -33,7 +33,6 @@ public class Ferry {
     }
 
     // getters
-
     public double getMaxSpeed() {
         return maxSpeed;
     }

@@ -43,8 +43,7 @@ public class Metro extends Train {
         return serialNum;
     }
 
-    // setters
-
+    // setter
     public void setNumStops(int numStops) {
         this.numStops = numStops;
     }
