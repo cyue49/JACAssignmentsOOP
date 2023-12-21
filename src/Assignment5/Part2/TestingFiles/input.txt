@@ -1,0 +1,4 @@
+Some random sentences for testing purpose.
+The first month of the year is January.
+The last month of the year is December.
+A week has 7 days.
