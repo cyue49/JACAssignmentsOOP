@@ -63,6 +63,10 @@ public class Main {
         Scanner kb = new Scanner(System.in);
         System.out.println("Enter a file name: ");
         String fileName = kb.nextLine();
+        while (!fileName.matches("\\S+\\.txt")){
+            System.out.println("Invalid file name. Please make sure to enter a file name without any whitespace followed by \".txt\": ");
+            fileName = kb.nextLine();
+        }
         System.out.println("Enter a string: ");
         String content = kb.nextLine();
         writeToFile(fileName, content);
