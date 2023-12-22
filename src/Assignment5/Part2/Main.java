@@ -63,7 +63,7 @@ public class Main {
         Scanner kb = new Scanner(System.in);
         System.out.println("Enter a file name: ");
         String fileName = kb.nextLine();
-        while (!fileName.matches("\\S+\\.txt")){
+        while (!fileName.matches("\\S+\\.txt")){ // one or more occurrences of any non-whitespace character followed by ".txt"
             System.out.println("Invalid file name. Please make sure to enter a file name without any whitespace followed by \".txt\": ");
             fileName = kb.nextLine();
         }
